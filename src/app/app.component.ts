@@ -11,6 +11,7 @@ import { OutputComponent } from './components/output/output.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HomeComponent } from './components/home/home.component';
 import { InfinityScrollComponent } from './components/infinity-scroll/infinity-scroll.component';
+import { DeferrableViewComponent } from "./components/deferrable-view/deferrable-view.component";
 
 @Component({
   selector: 'app-root',
@@ -26,8 +27,9 @@ import { InfinityScrollComponent } from './components/infinity-scroll/infinity-s
     InputComponent,
     OutputComponent,
     HomeComponent,
-    InfinityScrollComponent
-  ],
+    InfinityScrollComponent,
+    DeferrableViewComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
