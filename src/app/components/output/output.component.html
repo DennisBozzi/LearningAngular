@@ -1,0 +1,18 @@
+<div class="flex items-center flex-col p-8">
+
+    <p>Add animals to the Zoo</p>
+
+    <div class="pb-8">
+        <button mat-button (click)="addTurtle()">🐢</button>
+        <button mat-button (click)="addBird()">🐦</button>
+        <button mat-button (click)="addGirafa()">🦒</button>
+    </div>
+
+    <p>{{animals.length}}</p>
+    <div class="flex max-w-sm flex-wrap gap-1">
+        @for(animal of animals; track $index){
+        <p>{{animal}}</p>
+        }
+    </div>
+
+</div>
