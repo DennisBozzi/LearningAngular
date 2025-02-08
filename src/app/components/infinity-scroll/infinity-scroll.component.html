@@ -1,0 +1,13 @@
+<div class="flex justify-center m-auto p-8 gap-4 max-w-140 flex-wrap search-results"
+infinite-scroll
+[infiniteScrollDistance]="2"
+[infiniteScrollThrottle]="50"
+(scrolled)="onScrollDown()">
+
+    @for(obj of names.slice(0,items);track $index){
+    <div class="border-white border-1 rounded p-2">
+        <p>{{obj.name}}</p>
+        <img class="w-32" [src]="obj.uri" alt="">
+    </div>
+    }
+</div>

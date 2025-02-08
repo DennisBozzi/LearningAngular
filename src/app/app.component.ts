@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { OutputComponent } from './components/output/output.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HomeComponent } from './components/home/home.component';
+import { InfinityScrollComponent } from './components/infinity-scroll/infinity-scroll.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,8 @@ import { HomeComponent } from './components/home/home.component';
     EventHandlingComponent,
     InputComponent,
     OutputComponent,
-    HomeComponent
+    HomeComponent,
+    InfinityScrollComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
