@@ -1,0 +1,13 @@
+<section class="p-8 flex justify-center items-center">
+  <div class="flex flex-col w-sm text-center">
+    @if (isServerRunning) {
+    <p>Yes, the server is running</p>
+    <button mat-button (click)="changeServer()">Turn Off</button>
+    }
+
+    @else {
+    <p>No, the server is not running</p>
+    <button mat-button (click)="changeServer()">Turn On</button>
+    }
+  </div>
+</section>

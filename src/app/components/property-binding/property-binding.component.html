@@ -1,0 +1,25 @@
+<div class="flex flex-col p-8 items-center">
+    <img alt="photo" class="max-w-36 rounded-xl" [src]="imageUrl">
+
+    <div class="py-8 text-white flex flex-col items-center gap-4">
+
+        <div>
+            <p class="px-2">Change de editable property.</p>
+            <div [contentEditable]="isEditable" class="px-2 bg-zinc-800 rounded-sm w-56">
+                Yo!
+            </div>
+        </div>
+
+        <button mat-button (click)="changeEditable()" class="">
+            @if(isEditable){
+            Off
+            }
+            @else {
+            On
+            }
+        </button>
+
+    </div>
+
+
+</div>
