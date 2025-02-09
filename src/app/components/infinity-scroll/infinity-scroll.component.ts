@@ -80,7 +80,6 @@ export class InfinityScrollComponent {
   ];
 
   onScrollDown() {
-    console.log("scrolled down");
     this.items += 4;
     if (this.items >= this.names.length) {
       this.end = true;

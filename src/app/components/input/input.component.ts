@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { createAvatar } from '@dicebear/core';
+import { adventurer } from '@dicebear/collection';
 
 @Component({
   selector: 'app-input',
@@ -11,5 +13,10 @@ import { FormsModule } from '@angular/forms';
 export class InputComponent {
 
   @Input() name = '';
+  uri = createAvatar(adventurer, { seed: 'Dennis' }).toDataUri()
+
+  generateAvatar() {
+    this.uri = createAvatar(adventurer, { seed: this.name }).toDataUri()
+  }
 
 }

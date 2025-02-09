@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BirdsAngular": {
+    "LearningAngular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/birds-angular",
+            "outputPath": "dist/learning-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "BirdsAngular:build:production"
+              "buildTarget": "LearningAngular:build:production"
             },
             "development": {
-              "buildTarget": "BirdsAngular:build:development"
+              "buildTarget": "LearningAngular:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -41,7 +41,7 @@ export class AppComponent {
     this._snackBar.open(message, action);
   }
 
-  title = 'BirdsAngular';
+  title = 'Learning Angular';
 
   animals = new Array();
 

@@ -1,9 +1,12 @@
 <div class="flex flex-col items-center p-8">
+
+    <img [src]="uri" alt="" width="100" height="100" class="mb-4 rounded bg-zinc-800" />
+
     <div class="flex flex-col gap-2">
         <label class="text-center" for="userName">What's your name?</label>
-        <input class="px-2 bg-zinc-800 rounded-sm w-56" type="text" id="userName" [(ngModel)]="name" />
+        <input (input)="generateAvatar()" class="px-2 bg-zinc-800 rounded-sm w-56" type="text" id="userName"
+            [(ngModel)]="name" />
     </div>
-
 
     <p class="text-center mt-8">Your name is:<br /> {{name}}</p>
 </div>
